@@ -25,6 +25,18 @@
   <link href="lib/animate/animate.min.css" rel="stylesheet">
   <link href="lib/venobox/venobox.css" rel="stylesheet">
 
+  <!-- Maping Area-->
+  <!-- Load Leaflet from CDN -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+  <!-- Load Esri Leaflet from CDN -->
+  <script src="https://unpkg.com/esri-leaflet/dist/esri-leaflet.js"></script>
+
+  <style>
+    #map { width: 700px; height: 250px; }
+  </style>
+
   <!-- Nivo Slider Theme -->
   <link href="css/nivo-slider-theme.css" rel="stylesheet">
 
@@ -54,8 +66,8 @@
                     <img src="img/Logo_Garuda.png" alt="">
                     </a>
                     <a class="navbar-brand page-scroll sticky-logo" href="index.html">
-                      <h1><span>Katalog </span>INA</h1>
-                      <h1><span><c>Geoportal </c></span><span>Nasional</span></h1>
+                      <h1><span>Katalog </span>Informasi</h1>
+                      <h1><span><c>Geospasial </c></span><span>Nasional</span></h1>
                       </a>
                 </div>
               
@@ -63,16 +75,10 @@
               <div class="collapse navbar-collapse main-menu bs-example-navbar-collapse-1" id="navbar-example">
                 <ul class="nav navbar-nav navbar-right">
                   <li class="active">
-                    <a class="page-scroll" href="#home">Home</a>
+                    <a class="page-scroll" href="file:///C:/xampp/htdocs/BIG/_MyWork/WebKatalogIG/metadata.html">Metadata</a>
                   </li>
                   <li>
-                    <a class="page-scroll" href="#about">About</a>
-                  </li>
-                  <li>
-                    <a class="page-scroll" href="#services">Services</a>
-                  </li>
-                  <li>
-                    <a class="page-scroll" href="#contact">Contact</a>
+                    <a class="page-scroll" href="file:///C:/xampp/htdocs/BIG/_MyWork/WebKatalogIG/index.html">KIGN</a>
                   </li>
                   <li>
                     <a class="page-scroll" href="http://tanahair.indonesia.go.id/portal-web/inageoportal/#/">Ina-Geoportal</a>
@@ -80,7 +86,7 @@
                   <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Menu<span class="caret"></span></a>
                     <ul class="dropdown-menu" role="menu">
                       <li><a href="http://kugi.ina-sdi.or.id/webpage_kugi5/kugi/kategori_kugi" >KUGI Versi 5</a></li>
-                      <li><a href="http://tanahair.indonesia.go.id/portal-web/news/view/101" >Metadata</a></li>
+                      <li><a href="file:///C:/xampp/htdocs/BIG/_MyWork/WebKatalogIG/metadata.html#contact" >Metadata</a></li>
                       <li><a href="http://kugi.ina-sdi.or.id/webpage_kugi5/metaservice/daftar_metaservice" >Metaservice</a></li>
                     </ul> 
                   </li>
@@ -121,28 +127,28 @@
 
             <div class="single-metadata-page">
               <div class="left-metadata">
-                <h4>categories</h4>
+                <h4>Kategori dalam KUGI</h4>
                 <ul>
                   <li>
-                    <a href="#">Portfolio</a>
+                    <a href="#">Contoh</a>
                   </li>
                   <li>
-                    <a href="#">Project</a>
+                    <a href="#">Contoh</a>
                   </li>
                   <li>
-                    <a href="#">Design</a>
+                    <a href="#">Contoh</a>
                   </li>
                   <li>
-                    <a href="#">wordpress</a>
+                    <a href="#">Contoh</a>
                   </li>
                   <li>
-                    <a href="#">Joomla</a>
+                    <a href="#">Contoh</a>
                   </li>
                   <li>
-                    <a href="#">Html</a>
+                    <a href="#">Contoh</a>
                   </li>
                   <li>
-                    <a href="#">Website</a>
+                    <a href="#">Contoh</a>
                   </li>
                 </ul>
               </div>
@@ -150,17 +156,17 @@
 
              <!-- recent start -->
              <div class="left-metadata">
-              <h4>recent post</h4>
+              <h4>Indeks Metadata</h4>
               <div class="recent-post">
                 <!-- start single post -->
                 <div class="recent-single-post">
                   <div class="post-img">
                     <a href="#">
-                      <img src="img/metadata/1.jpg" alt="">
+                      <img src="img/metadata/sumsel.jpg" alt="">
                     </a>
                   </div>
                   <div class="pst-content">
-                    <p><a href="#"> Redug Lerse dolor sit amet consect adipis elit.</a></p>
+                    <p><a href="#"> Wilayah KPH Sumatera Selatan</a></p>
                   </div>
                 </div>
                 <!-- End single post -->
@@ -168,11 +174,11 @@
                 <div class="recent-single-post">
                   <div class="post-img">
                     <a href="#">
-                      <img src="img/metadata/2.jpg" alt="">
+                      <img src="img/metadata/kulonprogo.jpg" alt="">
                     </a>
                   </div>
                   <div class="pst-content">
-                    <p><a href="#"> Redug Lerse dolor sit amet consect adipis elit.</a></p>
+                    <p><a href="#"> Peta Ruang Terbuka Hijau Eksisting Perkotaan Kulon Progo</a></p>
                   </div>
                 </div>
                 <!-- End single post -->
@@ -180,11 +186,11 @@
                 <div class="recent-single-post">
                   <div class="post-img">
                     <a href="#">
-                      <img src="img/metadata/3.jpg" alt="">
+                      <img src="img/metadata/acehselatan.jpg" alt="">
                     </a>
                   </div>
                   <div class="pst-content">
-                    <p><a href="#"> Redug Lerse dolor sit amet consect adipis elit.</a></p>
+                    <p><a href="#"> Pola Ruang Aceh Selatan Bappeda Kabupaten</a></p>
                   </div>
                 </div>
                 <!-- End single post -->
@@ -192,14 +198,101 @@
           </div>
           <!-- recent end -->
         </div>
-        
-
-
-        </div>
       </div>
+      </div>
+      
+        
+        <!-- Start single metadata -->
+        <div class="col-md-8 col-sm-8 col-xs-12">
+          <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+              <!-- single-metadata start -->
+         
+              <!-- Start Geoportal Map -->
+
+                <!-- Start Map -->
+                <div class="mapview">
+                <div id="map"></div>
+                          <script>
+                            var map = L.map('map').setView([-3.34, 104.160], 7);
+                             L.esri.basemapLayer('Streets').addTo(map);
+
+                            var parks = L.esri.featureLayer({
+                              url: "https://services.arcgis.com/rOo16HdIMeOBI4Mb/arcgis/rest/services/Portland_Parks/FeatureServer/0",
+                              style: function () {
+                                return { color: "#70ca49", weight: 2 };
+                              }
+                            }).addTo(map);
+
+                            // create a marker object to query against
+                            var marker = L.marker([-3.34, 104.160]).addTo(map);
+
+                            var polygon = L.polygon([
+                              [-3.30, 102.886],
+                              [-2.97, 104.748],
+                              [-3.83, 104.479],
+                              [-3.79, 103.556]
+                            ], {
+                              color: 'blue',
+                              weight: 2
+                            }).addTo(map);
+
+                            var popupTemplate = "<h3>{NAME}</h3>{ACRES} Acres<br><small>Property ID: {PROPERTYID}<small>";
+
+                            parks.bindPopup(function(e){
+                              return L.Util.template(popupTemplate, e.feature.properties)
+                            });
+                          </script> 
+                          </div> 
+              <!-- End Map -->
+              </div>
+              <!-- End Geoportal Map -->
+
+              <div class="rightarticle">
+              <article class="metadata-post-wrapper">
+                <div class="post-information">
+                  <h2>Wilayah KPH Sumatera Selatan</h2></span>
+                  <div class="entry-meta">
+                    <span class="author-meta">
+                    <span></i> 28 Maret, 2018</span>&ensp;
+                    <span class="tag-meta">
+												<i class="fa fa-folder-o"></i>
+												<a href="#">XML</a>&ensp;
+											</span>
+                    <span>
+												<i class="fa fa-tags"></i>
+												<a href="#">View Map Inageoportal</a>
+											</span>
+                  <div class="entry-content">
+                    <br><h4>Dataset Description</h4>
+                    <p>The data below is provided for application developers or those wishing to reuse the data for other purposes. 
+                      It is important that application developers keep the data up to date with the current version available on this website.</p>
+                    <p>If you are seeking office opening hours, the Department of Human Services Service Centre 
+                      locator contains information updated weekly, a search function and maps.</p>
+                    <br><h4>Resource Description</h4>
+                    <blockquote>
+                      <p>The data below is provided for application developers or those wishing to reuse the data for other purposes. 
+                        It is important that application developers keep the data up to date with the current version available on this website.</p>
+                    </blockquote>
+                    <h5>Author</h5>
+                    <p>Medicare Indonesia</p>
+                    <br><h5>Data URL</h5>
+                    Use the link below to download the data directly.
+                    <p><a href="https://data.gov.au/dataset/location-of-medicare-offices">https://data.gov.au/dataset/location-of-medicare-offices</a></p>
+                  </div>
+                </div>
+              </article>
+
+
+            </div>
+          </div>
+        </div>
+       </div>
+      </div>
+     </div>
     </div>
-  </div>
-  </div>
+    <!-- End Blog Area -->
+    <div class="clearfix"></div>
 
 
   <!-- Start Footer bottom Area -->
